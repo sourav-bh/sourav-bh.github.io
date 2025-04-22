@@ -1,1 +1,24 @@
-true
+<!DOCTYPE html>
+<html>
+<head>
+<title>Generate RSA format SSH Key for Server Authentication</title>
+</head>
+<body style="font-family: verdana">
+
+<h1>Generate RSA format SSH Key for Server Authentication</h1>
+<ol>
+  <li>Open Terminal (MacOS/Linux) or Command Line/Powershell/Git Bash (Windows)</li>
+  </br>
+  <li>Run this command below:</li>
+  <p><samp>> ssh-keygen -t rsa</samp></p>
+  </br>
+  <li>When you're prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location. Please note that if you created SSH keys previously, ssh-keygen may ask you to rewrite another key, in which case we recommend creating a custom-named SSH key. To do so, type the default file location and replace id_CUSTOM with your custom key name (like id_server).</li>
+  <p><samp>> Enter file in which to save the key (/c/Users/YOU/.ssh/id_CUSTOM):</samp></p>
+  </br>
+  <li>At the final prompt, type a secure passphrase but keep it simple so that you don't forget it.</li>
+  </br>
+  <li>Now using the File Explorer (Windows) / Finder (MacOS), locate the genereated file as mentioned in step-3. like: <samp>id_server.pub</samp></li>
+</ol> 
+
+</body>
+</html>
